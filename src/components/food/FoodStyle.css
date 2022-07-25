@@ -1,0 +1,38 @@
+.food{
+    width: 100%;
+    height: 100vh;
+   
+
+}
+
+
+.food .container{
+    width: 100%;
+    height: 100%;
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.chicken{
+    background:url('../../assets/chicken.jpg') center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left{
+    background:url('../../assets/craft1.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.right{
+    background:url('../../assets/craft2.jpg') center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+@media screen and (max-width:740px) {
+    .food .container{
+        grid-template-columns:1fr;
+
+    }
+}

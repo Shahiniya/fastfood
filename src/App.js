@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Food from './components/food/Food';
+import Hero from './components/hero/Hero';
+import Navbar from './components/Navbar/Navbar';
+import Craft1 from './assets/craft1.jpg';
+import Craft2 from './assets/craft2.jpg';
+import Chicken from './assets/chicken.jpg';
+import Burger from './assets/burger.jpg';
+import HeroBG from './assets/hero-bg.jpg';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+     <Navbar/>
+     <Hero/>
+     <Food bgImg1={Craft1} />
     </div>
   );
 }
